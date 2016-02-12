@@ -73,4 +73,9 @@ where:
 - ```$^``` expands to the names of all the targets we specified as dependencies (```my_great_module.o```, ```my_great_module_test.o```, and ```gtest_main.a``` in this case), separated by space
 - ```$@``` expands to the name of the target (```my_greate_module_test``` in this case)
 
-Now, if you type in ```make 
+Now, if you type in ```make my_great_module_test```, you should get an executable called ```my_great_module_test```, and if you run it, you should see a report on running unit tests on your module.
+
+# Build Unit Tests by Default
+
+If you add the 3rd target (the executable) to the variable ```TESTS``` defined in the Makefile (make sure to separate targets using a space), it will be built when you type in ```make```.
+
