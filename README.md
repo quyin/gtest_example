@@ -3,6 +3,9 @@ GoogleTest Example Project
 
 This example shows how to include GoogleTest sources for unit testing into your project, and use ```make``` to build these unit tests.
 
+The examples are extracted from the official [GoogleTest](https://github.com/google/googletest) release.
+The code structure is simplified to make it easier to use in class.
+
 We assume that the source code of your project goes into ```src```. If you put it somewhere else, you need to change the ```USER_DIR``` variable tin the Makefile.
 
 # Write Unit Tests
